@@ -30,3 +30,8 @@
 		zmk,underglow = &led_strip;
 	};
 };
+
+/* Disable conflicting SPI definition if it exists */
+&spi0 {
+    status = "disabled";
+};
